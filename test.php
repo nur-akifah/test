@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="http://www.jqueryscript.net/demo/jQuery-Plugin-For-Multi-Select-List-with-Checkboxes-MultiSelect/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="http://www.jqueryscript.net/demo/jQuery-Plugin-For-Multi-Select-List-with-Checkboxes-MultiSelect/jquery.multiselect.js"></script>
+    <style>
+        body {
+            font-family: 'Open Sans' Arial, Helvetica, sans-serif
+        }
+
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: nont;
+        }
+
+        .label {
+            color: #000;
+            font-size: 16px;
+        }
+
+        .container {
+            width: 200px;
+        }
+    </style>
+
+    <div class="container">
+        <!-- <h2>jQuery MultiSelect Basic Example</h2> -->
+        <select name="country" multiple class="form-control">
+            <option value="">Country...</option>
+            <option value="AF">Afghanistan</option>
+            <option value="AL">Albania</option>
+            <option value="DZ">Algeria</option>
+            <option value="AS">American Samoa</option>
+        </select>
+    </div>
+
+    <script>
+        $('select[multiple]').multiselect({
+            columns: 1,
+            placeholder: 'Select options'
+        });
+    </script>
+</body>
+
+</html>
